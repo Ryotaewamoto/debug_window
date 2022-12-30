@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({
-    Key? key,
+    super.key,
     required this.title,
-  }) : super(key: key);
+  });
 
   final String title;
 
