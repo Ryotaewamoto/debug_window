@@ -35,4 +35,4 @@ DebugWindow(
 
 ## Remark
 
-The text color in this debug window is black by default. Therefore, I recommend to specify the style of the character, like ``style: contentTextStyle``.
+The text color in this debug window is black by default. Therefore, I recommend to specify the style of the character, like [``style: contentTextStyle``](https://github.com/Ryotaewamoto/debug_window/blob/main/lib/src/content_text_styles.dart).
