@@ -1,7 +1,11 @@
 ## 0.0.1
 
-* initial release.
+* initial release🎉
 
 ## 1.0.0
 
 * - add enough README.md
+
+## 1.0.1
+
+* - fix LICENSE
