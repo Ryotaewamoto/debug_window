@@ -1,19 +1,38 @@
-# sample
+<img src="screenshots/widget_image.png" width="50%">
 
-A new Flutter plugin project.
+<img src="screenshots/widget_image_closed_version.png" width="50%">
 
-## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-The plugin project was generated without specifying the `--platforms` flag, no platforms are currently supported.
-To add platforms, run `flutter create -t plugin --platforms <platforms> .` in this directory.
-You can also find a detailed instruction on how to add platforms in the `pubspec.yaml` at https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms.
 # debug_window
+
+Useful debug window widget for flutter. If you press the close icon, this debug window is minimized.
+
+## How to use
+
+```dart
+DebugWindow(
+    debugContent: Padding(
+        padding: const EdgeInsets.all(8),
+        child: Row(
+            children: [
+                Text(
+                    'example: ${streamData}',
+                    style: contentTextStyle,
+                ),
+            ],
+        ),
+    ),
+```
+
+## Arguments
+
+``debugContent``: You give this argument some content you would like to represent on a screen in your flutter app.
+
+``backgroundColor``: This value is a color of debug window. Default value is ``Colors.black.withOpacity(0.2)``.
+
+``isBottom``: In the case that you wouldn't like to put on top, you change this value to ``true``. Then debug window is represented on bottom.
+
+## Remark
+
+The text color in this debug window is black by default. Therefore, I recommend to specify the style of the character, like ``style: contentTextStyle``.
