@@ -2,14 +2,9 @@
 
 * initial release🎉
 
-## 1.0.0
+## 1.0.3
 
-* - add enough README.md
+* add enough README.md
+* fix LICENSE
+* change SDK version
 
-## 1.0.1
-
-* - fix LICENSE
-
-## 1.0.2
-
-* - change SDK version
