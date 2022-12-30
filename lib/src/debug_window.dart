@@ -7,6 +7,7 @@ class DebugWindow extends StatefulWidget {
     this.debugContent,
     this.backgroundColor,
     this.isBottom = false,
+    this.isEnable = true,
     super.key,
   });
 
@@ -14,6 +15,7 @@ class DebugWindow extends StatefulWidget {
   final Widget? debugContent;
   final Color? backgroundColor;
   final bool isBottom;
+  final bool isEnable;
 
   @override
   State<DebugWindow> createState() => _DebugWindowState();
@@ -27,6 +29,7 @@ class _DebugWindowState extends State<DebugWindow> {
     return Stack(
       children: [
         widget.child,
+        if (widget.isEnable)
         Align(
           alignment:
               widget.isBottom ? Alignment.bottomCenter : Alignment.topCenter,
