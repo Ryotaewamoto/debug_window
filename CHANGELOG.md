@@ -9,3 +9,7 @@
 ## 1.0.1
 
 * - fix LICENSE
+
+## 1.0.2
+
+* - change SDK version
