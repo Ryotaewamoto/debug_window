@@ -1,10 +1,10 @@
-<img src="screenshots/widget_image.png" width="30%">
+<img src="https://user-images.githubusercontent.com/75112184/210074549-a5219bf8-f220-4dc1-9861-b59c33d96619.png" width="30%">
 
 # debug_window
 
 Useful debug window widget for flutter. If you press the close icon, this debug window is minimized.
 
-<img src="screenshots/widget_image_closed_version.png" width="30%">
+<img src="https://user-images.githubusercontent.com/75112184/210074555-9524925a-bbef-47d8-bd57-7b85edc1f564.png" width="30%">
 
 ## How to use
 
