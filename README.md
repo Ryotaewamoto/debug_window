@@ -31,6 +31,8 @@ DebugWindow(
 
 ``isBottom``: In the case that you wouldn't like to put on top, you change this value to ``true``. Then debug window is represented on bottom.
 
+``isEnable``: If you separate environment like dev and prod, this value is essential. When you choose ``false``, this debug window is not visible.
+
 ## Remark
 
 The text color in this debug window is black by default. Therefore, I recommend to specify the style of the character, like [``style: contentTextStyle``](https://github.com/Ryotaewamoto/debug_window/blob/main/lib/src/content_text_styles.dart).
