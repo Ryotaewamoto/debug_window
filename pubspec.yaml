@@ -1,5 +1,5 @@
 name: debug_window
-description: A new Flutter plugin project.
+description: This debug_window is an open-source library, in other words, a useful widget to enable you to confirm log or stream data in your flutter application.
 version: 0.0.1
 homepage: https://github.com/Ryotaewamoto/debug_window
 
