@@ -9,7 +9,7 @@
 * change SDK version
 * add images in README.md
 
-## 1.0.5
+## 1.0.6
 
 * add a argument ``isEnable`` to use in dev environment
 
