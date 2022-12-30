@@ -1,4 +1,4 @@
-# sample_example
+# debug_window_example
 
 Demonstrates how to use the sample plugin.
 
