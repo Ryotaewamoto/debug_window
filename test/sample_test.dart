@@ -1,7 +1,17 @@
-// import 'package:flutter_test/flutter_test.dart';
-// import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+import 'package:debug_window/debug_window.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
+  testWidgets('MyWidget has a title and message', (tester) async {
+    await tester.pumpWidget(
+      DebugWindow(
+        child: Container(),
+      ),
+    );
+
+    expect(find.byIcon(Icons.close), findsOneWidget);
+  });
   // final SamplePlatform initialPlatform = SamplePlatform.instance;
 
   // test('$MethodChannelSample is the default instance', () {
