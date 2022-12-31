@@ -13,3 +13,8 @@
 
 * add a argument ``isEnable`` to use in dev environment
 
+## 1.0.7
+
+* add some comments in dart files
+* add workflows of flutter test and flutter analyze
+
