@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'content_text_styles.dart';
 
+/// [DebugWindow] is a useful widget to represent some data on the device. If
+/// you use this widget, a ancestor of this needs to have [MaterialApp] and
+/// [Scaffold]. Without these, you will take Runtime-Error.
+///
 class DebugWindow extends StatefulWidget {
   const DebugWindow({
     required this.child,
@@ -13,9 +17,23 @@ class DebugWindow extends StatefulWidget {
   });
 
   final Widget child;
+
+  /// [debugContent] is a debug content you would like to represent on a
+  /// screen in your flutter app.
+  ///
   final Widget? debugContent;
+
+  /// [backgroundColor] is debug window color. Default value is
+  /// Colors.black.withOpacity(0.2).
+  ///
   final Color? backgroundColor;
+
+  /// [isBottom] is used in the case that you wouldn't like to put on top.
+  ///
   final bool isBottom;
+
+  /// If [isEnable] is false, you cannot look at this debug window.
+  ///
   final bool isEnable;
 
   @override
@@ -23,14 +41,17 @@ class DebugWindow extends StatefulWidget {
 }
 
 class _DebugWindowState extends State<DebugWindow> {
+  // First, this debug window is open.
   bool isOpen = true;
 
+  // close window when a close icon is tapped.
   void _closeWindow() {
     setState(() {
       isOpen = false;
     });
   }
 
+  // open window when a close icon is tapped.
   void _openWindow() {
     setState(() {
       isOpen = true;
