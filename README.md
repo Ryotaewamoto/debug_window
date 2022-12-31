@@ -1,6 +1,10 @@
 <img src="https://user-images.githubusercontent.com/75112184/210074549-a5219bf8-f220-4dc1-9861-b59c33d96619.png" width="30%">
 
 # debug_window
+[![Flutter_Test](https://github.com/Ryotaewamoto/debug_window/actions/workflows/flutter_test.yaml/badge.svg)](https://github.com/Ryotaewamoto/debug_window/actions/workflows/flutter_test.yaml)
+[![codecov](https://codecov.io/gh/Ryotaewamoto/debug_window/branch/main/graph/badge.svg?token=b94Aa5ooEF)](https://codecov.io/gh/Ryotaewamoto/debug_window)
+![GitHub](https://img.shields.io/github/license/Ryotaewamoto/debug_window)
+
 
 Useful debug window widget for flutter. If you press the close icon, this debug window is minimized.
 

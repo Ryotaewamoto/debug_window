@@ -1,3 +1,5 @@
+# This is a workflow to test flutter code and to measure the coverage.
+
 name: Flutter_Test
 
 on:

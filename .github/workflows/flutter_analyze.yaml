@@ -1,3 +1,5 @@
+# This is a workflow to run flutter static analyze
+
 name: Flutter_Analyze
 
 on:
