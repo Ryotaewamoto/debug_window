@@ -25,6 +25,18 @@ class DebugWindow extends StatefulWidget {
 class _DebugWindowState extends State<DebugWindow> {
   bool isOpen = true;
 
+  void _closeWindow() {
+    setState(() {
+      isOpen = false;
+    });
+  }
+
+  void _openWindow() {
+    setState(() {
+      isOpen = true;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -59,9 +71,7 @@ class _DebugWindowState extends State<DebugWindow> {
                                 ),
                               ),
                               IconButton(
-                                onPressed: () => setState(() {
-                                  isOpen = false;
-                                }),
+                                onPressed: _closeWindow,
                                 icon: const Icon(Icons.close),
                               ),
                             ],
@@ -87,9 +97,7 @@ class _DebugWindowState extends State<DebugWindow> {
                     child: Padding(
                       padding: const EdgeInsets.all(8),
                       child: IconButton(
-                        onPressed: () => setState(() {
-                          isOpen = true;
-                        }),
+                        onPressed: _openWindow,
                         icon: DecoratedBox(
                           decoration: BoxDecoration(
                             color: widget.backgroundColor ??
