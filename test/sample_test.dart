@@ -5,8 +5,10 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   testWidgets('MyWidget has a title and message', (tester) async {
     await tester.pumpWidget(
-      DebugWindow(
-        child: Container(),
+      MaterialApp(
+        home: DebugWindow(
+          child: Container(),
+        ),
       ),
     );
 
