@@ -6,8 +6,13 @@ void main() {
   testWidgets('MyWidget has a title and message', (tester) async {
     await tester.pumpWidget(
       MaterialApp(
-        home: DebugWindow(
-          child: Container(),
+        home: Scaffold(
+          appBar: AppBar(),
+          body: const DebugWindow(
+            child: Center(
+              child: Text('test'),
+            ),
+          ),
         ),
       ),
     );
